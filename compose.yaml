@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: .
+    image: ngin-public_html
+    volumes:
+      - ./public_html/:/usr/share/nginx/html/
+    ports:
+      - "8080:80"
