@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('SCM') {
-            steps {
-                git branch: 'main', url: 'https://github.com/angelocho/hello-2048.git'
-            }
-        }
         stage('TestingDocker') {
             steps {
                 sh 'docker-compose config'
