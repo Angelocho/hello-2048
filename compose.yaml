@@ -4,4 +4,4 @@ services:
     build: .
     image: ghcr.io/angelocho/hello-2048/nginx-public-html:v1
     ports:
-      - "8080:80"
+      - "80:80"
